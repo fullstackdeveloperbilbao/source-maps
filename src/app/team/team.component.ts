@@ -16,8 +16,6 @@ export class TeamComponent implements OnInit {
   }
 
   onChangeTitle() {
-    debugger;
-    console.log("HOLA");
     this.title = this.titles.find((title) => title != this.title);
   }
 }
