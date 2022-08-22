@@ -2,6 +2,7 @@
 
 # Compiled output
 /dist
+/localSourceMaps
 /tmp
 /out-tsc
 /bazel-out

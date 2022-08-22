@@ -1,20 +1,21 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { TeamComponent } from './team.component';
 
 const routes: Routes = [
   {
-    path: 'team',
-    loadChildren: () => import('./team/team.module').then((m) => m.TeamModule),
+    path: '',
+    component: TeamComponent,
   },
   {
     path: '**',
     pathMatch: 'full',
-    redirectTo: 'team',
+    redirectTo: '',
   },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class TeamRoutingModule {}
